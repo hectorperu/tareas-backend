@@ -8,7 +8,7 @@ app = Flask(__name__)
 CORS(app)
 app.app_context().push()
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:@localhost/db_tareas'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://uucrj48hybfvjfum:q7sihzASM8JXQbzv5NoE@btezlxwlubgfnfr5culd-mysql.services.clever-cloud.com:3306/btezlxwlubgfnfr5culd'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
@@ -108,4 +108,4 @@ def deleteTarea(id):
     
     return jsonify(context)
 
-app.run(debug=True)
+#app.run(debug=True)
